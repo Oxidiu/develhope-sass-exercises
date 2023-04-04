@@ -1,0 +1,36 @@
+
+body{
+    padding: 20px;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid red;
+        h1{
+            // text-decoration: 1px underline blue;
+            border-bottom: 1px solid blue;
+            padding-bottom: 3px;
+            color: green;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            article{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                border: 1px solid green;
+                padding: 25px;
+                font-size: 17px;
+                &:nth-child(even){
+                    color: red;
+                }
+                &:nth-child(odd){
+                    color: blue;
+                }
+            }
+        }
+    }
+}
