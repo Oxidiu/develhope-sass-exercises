@@ -1,17 +1,17 @@
 body {
-  padding: 20px;
+  padding: 1.25rem;
 }
 body div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
-  border: 1px solid red;
+  padding: 1.25rem;
+  border: 0.0625rem solid red;
 }
 body div h1 {
-  border-bottom: 1px solid blue;
-  padding-bottom: 3px;
+  border-bottom: 0.0625rem solid blue;
+  padding-bottom: 0.1875rem;
   color: green;
 }
 body div section {
@@ -20,30 +20,30 @@ body div section {
 }
 body div section article:nth-child(even) {
   color: red;
-  border: 1px solid green;
+  border: 0.0625rem solid green;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 25px;
+  padding: 1.5625rem;
 }
 body div section article:nth-child(odd) {
   color: blue;
-  border: 1px solid green;
+  border: 0.0625rem solid green;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 25px;
+  padding: 1.5625rem;
 }
 body div section:nth-of-type(2) article {
   color: green;
-  border: 1px solid blue;
+  border: 0.0625rem solid blue;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 /*# sourceMappingURL=style.css.map */
