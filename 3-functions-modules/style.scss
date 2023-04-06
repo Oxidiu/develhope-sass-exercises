@@ -1,5 +1,5 @@
 @use "variables.scss" as v;
-@use "functions" as f;
+@use "functions.scss" as f;
 body{
     padding: f.to-rem(20px);
     div{

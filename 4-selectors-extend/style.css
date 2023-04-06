@@ -1,0 +1,63 @@
+body {
+  padding: 1.25rem;
+}
+body div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 0.0625rem solid red;
+}
+body div .h1, body div .h1-class {
+  border-bottom: 0.0625rem solid blue;
+  padding-bottom: 0.1875rem;
+  color: green;
+}
+body div .h1-class {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+}
+body div section {
+  display: flex;
+  justify-content: center;
+}
+body div section article:nth-child(even) {
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5625rem;
+}
+body div section article:nth-child(odd) {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5625rem;
+}
+body div section:nth-of-type(2) {
+  display: flex;
+  width: 100%;
+  margin-top: 1.25rem;
+}
+body div section:nth-of-type(2) article {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5625rem;
+  flex-grow: 1;
+  width: 100%;
+  font-size: clamp(1rem, 3vw, 1.42rem); /* set a range of font sizes */
+  width: fit-content; /* limit the width of the element to its content */
+  height: fit-content; /* limit the height of the element to its content */
+}
+
+/*# sourceMappingURL=style.css.map */
