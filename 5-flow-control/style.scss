@@ -1,0 +1,92 @@
+@use "variables.scss" as v;
+@use "functions.scss" as f;
+
+$sizes: 1rem, 2rem, 3rem;
+@each $size in $sizes{
+    .fs-#{$size}{
+        font-size:$size;
+        display:flex;
+        padding:0;
+        justify-content: start;
+        align-items: start;
+        width:f.to-rem(45px);
+        height: f.to-rem(45px);
+    }
+}
+
+@for $index from 1 through 19 {
+    section:nth-of-type(2){
+        div:nth-child(#{$index}){
+            background-color: darken(#fff, $index * 5);
+            color: lighten(black, $index *5)
+        }
+    }
+        
+}
+
+
+body{
+    padding: f.to-rem(20px);
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: f.to-rem(20px);
+        border: f.to-rem(1px) solid v.$color-1;
+        .h1{
+            // text-decoration: 1px underline blue;
+            border-bottom: f.to-rem(1px) solid v.$color-2;
+            padding-bottom: f.to-rem(3px);
+            color: green;
+            &-class{
+                @extend .h1;
+                padding:1rem;
+                border: f.to-rem(1px) solid v.$color-1;
+            }
+        }
+        
+        
+        section{
+            display: flex;
+            justify-content: center;
+            article{
+                
+                &:nth-child(even){
+                    @include f.article-style(v.$color-1, v.$color-3)
+                }
+                &:nth-child(odd){
+                    @include f.article-style(v.$color-2, v.$color-3)
+                }
+            }
+            &:nth-of-type(2){
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                div:nth-child(10){
+                    background-color: blue;
+                    color: red;
+                }
+                
+            }
+            &:nth-of-type(3){
+                display: flex;
+                width: 100%;
+                margin-top: f.to-rem(20px);
+                article {
+                    @include f.article-style(v.$color-3, v.$color-2);
+                    flex-grow: 1; // add this line to stretch the section
+                    width: 100%;
+                    font-size: clamp(1rem, 3vw, 1.9rem); /* set a range of font sizes */
+                    width: fit-content; /* limit the width of the element to its content */
+                    height: fit-content; /* limit the height of the element to its content */
+                    //for the fontsize I know I could just set the value, but I used this technique to have it in my notes.
+                }
+                
+            } 
+                
+        }
+        
+
+    }
+}

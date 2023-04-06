@@ -1,0 +1,197 @@
+.fs-1rem {
+  font-size: 1rem;
+  display: flex;
+  padding: 0;
+  justify-content: start;
+  align-items: start;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+  display: flex;
+  padding: 0;
+  justify-content: start;
+  align-items: start;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+  display: flex;
+  padding: 0;
+  justify-content: start;
+  align-items: start;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+section:nth-of-type(2) div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+
+section:nth-of-type(2) div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+section:nth-of-type(2) div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+section:nth-of-type(2) div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+section:nth-of-type(2) div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+
+section:nth-of-type(2) div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+
+section:nth-of-type(2) div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+
+section:nth-of-type(2) div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+
+section:nth-of-type(2) div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+
+section:nth-of-type(2) div:nth-child(10) {
+  background-color: gray;
+  color: gray;
+}
+
+section:nth-of-type(2) div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+
+section:nth-of-type(2) div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+
+section:nth-of-type(2) div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+
+section:nth-of-type(2) div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+
+section:nth-of-type(2) div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+
+section:nth-of-type(2) div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+section:nth-of-type(2) div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+section:nth-of-type(2) div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+section:nth-of-type(2) div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+body {
+  padding: 1.25rem;
+}
+body div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 0.0625rem solid red;
+}
+body div .h1, body div .h1-class {
+  border-bottom: 0.0625rem solid blue;
+  padding-bottom: 0.1875rem;
+  color: green;
+}
+body div .h1-class {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+}
+body div section {
+  display: flex;
+  justify-content: center;
+}
+body div section article:nth-child(even) {
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5625rem;
+}
+body div section article:nth-child(odd) {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5625rem;
+}
+body div section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body div section:nth-of-type(2) div:nth-child(10) {
+  background-color: blue;
+  color: red;
+}
+body div section:nth-of-type(3) {
+  display: flex;
+  width: 100%;
+  margin-top: 1.25rem;
+}
+body div section:nth-of-type(3) article {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5625rem;
+  flex-grow: 1;
+  width: 100%;
+  font-size: clamp(1rem, 3vw, 1.9rem); /* set a range of font sizes */
+  width: fit-content; /* limit the width of the element to its content */
+  height: fit-content; /* limit the height of the element to its content */
+}
+
+/*# sourceMappingURL=style.css.map */
