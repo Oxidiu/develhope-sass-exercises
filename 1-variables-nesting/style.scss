@@ -1,4 +1,6 @@
-
+$color1: red;
+$color2: blue;
+$color3: green;
 body{
     padding: 20px;
     div{
@@ -7,12 +9,12 @@ body{
         justify-content: center;
         flex-direction: column;
         padding: 20px;
-        border: 1px solid red;
+        border: 1px solid $color1;
         h1{
             // text-decoration: 1px underline blue;
-            border-bottom: 1px solid blue;
+            border-bottom: 1px solid $color2;
             padding-bottom: 3px;
-            color: green;
+            color: $color3;
         }
         section{
             display: flex;
@@ -21,14 +23,14 @@ body{
                 display: flex;
                 justify-content: center;
                 text-align: center;
-                border: 1px solid green;
+                border: 1px solid $color3;
                 padding: 25px;
                 font-size: 17px;
                 &:nth-child(even){
-                    color: red;
+                    color: $color1;
                 }
                 &:nth-child(odd){
-                    color: blue;
+                    color: $color2;
                 }
             }
         }
